@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Scanner"
 include(":app")
- 
+include(":inescanner")
