@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun navigateToScanFragment() {
+    fun navigateToScannerFragment() {
         navController.navigate(R.id.ScannerFragment)
     }
 }
