@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/space_16"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_login"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/space_24"
+        android:textAlignment="center" />
+
+    <!-- Nombre de Usuario -->
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:inputType="text"
+        android:layout_marginBottom="@dimen/space_16" />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="@dimen/space_24" />
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login" />
+
+</LinearLayout>

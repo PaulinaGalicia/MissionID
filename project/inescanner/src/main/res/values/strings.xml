@@ -1,3 +1,8 @@
 <resources>
     <string name="scanner_fragment_btn">Escanear</string>
+
+    <string name="title_login">Inicio de Sesión</string>
+    <string name="hint_username">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
 </resources>
