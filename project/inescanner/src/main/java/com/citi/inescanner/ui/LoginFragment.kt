@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.citi.inescanner.R
 import com.citi.inescanner.databinding.FragmentLoginBinding
+import androidx.navigation.fragment.findNavController
 
 class LoginFragment : Fragment() {
 
@@ -34,8 +36,15 @@ class LoginFragment : Fragment() {
             viewModel.login(username, password)
         }
 
-        //inicio de sesión
-
+        viewModel.loginState.observe(viewLifecycleOwner){ isSuccess ->
+            if(isSuccess){
+                // credenciales correctas
+                findNavController().navigate(R.id.action_loginFragment_to_scannerFragment)
+            }else{
+                // credenciales incorrectas
+                Toast.makeText(context, "Credenciales incorrectas", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
     override fun onDestroyView() {

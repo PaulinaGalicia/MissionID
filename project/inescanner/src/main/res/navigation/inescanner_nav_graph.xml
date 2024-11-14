@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/inescanner_nav_graph">
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.citi.inescanner.ui.ScannerFragment"
-        android:label="Login" />
+        android:name="com.citi.inescanner.ui.LoginFragment"
+        android:label="Login">
+    <action
+        android:id="@+id/action_loginFragment_to_scannerFragment"
+        app:destination="@+id/scanFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/scanFragment"
