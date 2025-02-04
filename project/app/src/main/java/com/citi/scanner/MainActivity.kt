@@ -25,4 +25,5 @@ class MainActivity : AppCompatActivity() {
     fun navigateToScannerFragment() {
         navController.navigate(R.id.ScannerFragment)
     }
+    //Prueba 1 Cherry
 }
