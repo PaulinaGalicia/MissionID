@@ -53,6 +53,12 @@ class LoginFragment : Fragment() {
         val c = a + b
     }
 
+    private fun modulo(){
+        val a = 1
+        val b = 2
+        val c = a % b
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
