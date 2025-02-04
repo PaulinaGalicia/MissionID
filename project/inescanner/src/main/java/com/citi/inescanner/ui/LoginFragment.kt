@@ -47,6 +47,12 @@ class LoginFragment : Fragment() {
         }
     }
 
+    private fun suma(){
+        val a = 1
+        val b = 2
+        val c = a + b
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
